@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/teal_700"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <TextView
+        android:textColor="@color/black"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Tên dịch vụ"/>
+    <Spinner
+        android:id="@+id/dialog_add_chi_tiet_dich_vu_spinner"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số lượng"
+        app:errorTextAppearance="@style/ErrorTextAppearance"
+        app:startIconDrawable="@drawable/baseline_add_24"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dialog_add_chi_tiet_dich_vu_soLuong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:inputType="number"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorTextAppearance="@style/ErrorTextAppearance"
+        android:hint="Giá tiền"
+        app:startIconDrawable="@drawable/baseline_attach_money_24"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dialog_add_chi_tiet_dich_vu_giaTien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:inputType="number"
+            android:layout_margin="20dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialog_add_chi_tiet_dich_vu_btnHuy"
+            android:text="Hủy"
+            android:textColor="@color/black"
+            android:layout_marginRight="30dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialog_add_chi_tiet_dich_vu_btnAdd"
+            android:text="Thêm"
+            android:layout_marginLeft="30dp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

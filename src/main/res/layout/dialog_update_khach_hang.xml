@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/dialog_khach_hang_vien_img_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/out_dialog" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dialog_update_khach_hang_textInput_cmt"
+        android:layout_below="@+id/dialog_khach_hang_vien_img_back"
+        android:layout_margin="20sp"
+        app:startIconDrawable="@drawable/baseline_person_outline_24"
+        android:layout_width="match_parent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dialog_update_khach_hang_edittext_cmt"
+            android:hint="Số CMT "
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dialog_update_khach_hang_textInput_nameKhach"
+        android:layout_below="@id/dialog_update_khach_hang_textInput_cmt"
+        android:layout_margin="20sp"
+        app:startIconDrawable="@drawable/baseline_person_outline_24"
+        android:layout_width="match_parent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dialog_update_khach_hang_textEdit_nameKhach"
+            android:hint="Tên khách hàng"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dialog_update_khach_hang_textInput_ngaySinh"
+        android:layout_below="@id/dialog_update_khach_hang_textInput_nameKhach"
+        android:layout_margin="20sp"
+        app:startIconDrawable="@drawable/baseline_date_range_24"
+        android:layout_width="match_parent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dialog_update_khach_hang_textEdit_ngaySinh"
+            android:hint=" ngày sinh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dialog_update_khach_hang_textInput_soDt"
+        android:layout_below="@id/dialog_update_khach_hang_textInput_ngaySinh"
+        android:layout_margin="20sp"
+        app:startIconDrawable="@drawable/baseline_local_phone"
+        android:layout_width="match_parent"
+        app:endIconMode="password_toggle"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dialog_update_khach_hang_textEdit_soDt"
+            android:inputType="textPassword"
+            android:hint="Số điện thoại"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/dialog_update_nhan_vien_btnUpdateKhachHang"
+        android:text="Cập nhật"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:backgroundTint="@color/teal_700"
+        android:layout_below="@id/dialog_update_khach_hang_textInput_soDt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

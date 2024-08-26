@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            app:errorTextAppearance="@style/ErrorTextAppearance"
+            android:layout_height="wrap_content"
+            android:hint="Mã khách hàng"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:startIconDrawable="@drawable/baseline_person_outline_24"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/activity_tao_phieu_dat_phong.maKhachHang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/activity_tao_phieu_dat_phong_btnTaoKH"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+           android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:text="Tạo"
+            android:layout_marginRight="10dp"
+            />
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:hint="Mã nhân viên"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:errorTextAppearance="@style/ErrorTextAppearance"
+        app:startIconDrawable="@drawable/baseline_person_24"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/activity_tao_phieu_dat_phong_nhanVien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:hint="Tên Phòng"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:errorTextAppearance="@style/ErrorTextAppearance"
+        app:startIconDrawable="@drawable/baseline_room_24"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/activity_tao_phieu_dat_phong_tenPhong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ngày đặt"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:errorTextAppearance="@style/ErrorTextAppearance"
+        app:startIconDrawable="@drawable/baseline_date_range_24"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/activity_tao_phieu_dat_phong_ngayDat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Giờ đặt"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:errorTextAppearance="@style/ErrorTextAppearance"
+        app:startIconDrawable="@drawable/baseline_hourglass_empty_24"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/activity_tao_phieu_dat_phong_gioDat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_marginTop="10dp"
+       android:layout_marginRight="5dp"
+       android:layout_marginLeft="5dp"
+       android:layout_height="wrap_content">
+       <com.google.android.material.textfield.TextInputLayout
+           app:startIconDrawable="@drawable/baseline_edit_note_24"
+           android:layout_width="match_parent"
+           android:hint="Thời gian đặt"
+           style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+           app:errorTextAppearance="@style/ErrorTextAppearance"
+           android:layout_centerVertical="true"
+           android:layout_height="wrap_content"
+           >
+           <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/activity_tao_phieu_dat_phong_thoiGianDat"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/black"
+               android:inputType="numberDecimal"
+               android:textSize="20dp"/>
+       </com.google.android.material.textfield.TextInputLayout>
+       <TextView
+           android:id="@+id/activity_tao_phieu_dat_phong_gio"
+           android:layout_width="wrap_content"
+           android:text="Ngày"
+           android:textSize="20dp"
+           android:layout_marginStart="10dp"
+           android:layout_marginEnd="20dp"
+           android:layout_centerVertical="true"
+           android:textColor="@color/black"
+           android:textStyle="bold"
+           android:layout_alignParentEnd="true"
+           android:layout_height="wrap_content"/>
+   </RelativeLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        app:startIconDrawable="@drawable/baseline_edit_note_24"
+        android:layout_width="match_parent"
+        android:hint="Gía thuê Phòng/Đơn vị"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:errorTextAppearance="@style/ErrorTextAppearance"
+        android:layout_height="wrap_content"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/activity_tao_phieu_dat_phong_giaThuePhong"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:textSize="20dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/activity_tao_phieu_dat_phong.xml_btnDichVu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Dịch vụ"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        >
+        <Button
+            android:id="@+id/activity_tao_phieu_dat_phong_btnHuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hủy"
+            android:layout_marginRight="30dp"
+            />
+
+        <Button
+            android:id="@+id/activity_tao_phieu_dat_phong_btnTaoPhieu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tạo phiếu"
+            android:layout_marginLeft="30dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

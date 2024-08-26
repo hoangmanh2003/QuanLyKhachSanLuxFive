@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@color/teal_700"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorTextAppearance="@style/ErrorTextAppearance"
+        app:startIconDrawable="@drawable/baseline_edit_note_24"
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dialog_add_dichVu_tenDV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên dịch vụ"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_margin="20dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialog_add_dichVu_huy"
+            android:text="Hủy"
+            android:layout_marginRight="30dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialog_add_dichVu_them"
+            android:text="Thêm"
+            android:layout_marginLeft="30dp"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

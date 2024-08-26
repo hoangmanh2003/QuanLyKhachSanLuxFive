@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:id="@+id/menu_nav_taiKhoanCuaBan"
+            android:icon="@drawable/baseline_edit_note_24"
+            android:title="Thông tin tài khoản"/>
+        <item android:id="@+id/menu_nav_dangXuat"
+            android:icon="@drawable/quan_ly_nhanvien_icon"
+            android:title="Đăng xuất"/>
+</menu>

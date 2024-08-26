@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/rcs"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/teal_700"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/dialog_update_hoaDon_OutDialog"
+            android:layout_gravity="end"
+            android:src="@drawable/out_dialog"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/kieuchu"
+            android:text="Thanh Toán Hóa Đơn"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/rcs"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-80dp"
+        app:cardCornerRadius="25dp"
+
+        >
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+
+            >
+
+
+            <TableRow
+
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:weightSum="3"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/avata_khach_hang"
+
+                    />
+
+
+                <TextView android:text=":"
+                    android:textColor="@color/white"/>
+
+
+                <TextView
+                    android:id="@+id/update_hoadon_tv_tenKhachHang"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="2"
+                  android:layout_marginTop="10dp"
+                   android:gravity="start"
+                    android:textSize="23dp"
+                    android:text="nguyễn trần khả dsadd" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:weightSum="3"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="ngày tháng"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+
+                    />
+
+                <TextView android:text=":"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"/>
+
+
+                <TextView
+                    android:id="@+id/update_hoadon_tv_ngayThang"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="2"
+                    android:textSize="20dp"
+                    android:text="dsadsahfdshfdsdsadsad" />
+            </TableRow>
+
+
+            <TableRow
+
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:weightSum="3"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="tiền phòng"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+
+                    tools:ignore="SpUsage" />
+
+                <TextView android:text=":"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    tools:ignore="HardcodedText,SpUsage" />
+
+
+                <TextView
+                    android:id="@+id/update_hoadon_tv_tienPhong"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="2"
+                    android:textSize="20dp"
+                    tools:ignore="HardcodedText,SpUsage"
+                    android:text="Nam" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:weightSum="3"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="dịch vụ"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+
+                    />
+
+                <TextView android:text=":"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"/>
+
+
+                <TextView
+                    android:id="@+id/update_hoadon_tv_tienDichVu"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="2"
+                    android:textSize="20dp"
+                    android:text="Nam" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:weightSum="3"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="tổng tiền"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+
+                    />
+
+                <TextView android:text=":"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"/>
+
+
+                <TextView
+                    android:id="@+id/update_hoadon_tv_tongtien"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="2"
+                    android:textSize="20dp"
+                    android:text="Nam" />
+            </TableRow>
+
+
+
+         <RelativeLayout android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="50dp"
+             >
+
+
+             <Button
+                 android:id="@+id/btn_hoa_don_thanhToan"
+                 android:layout_centerInParent="true"
+                 android:layout_width="wrap_content"
+                 android:text="Thanh Toán"
+                 android:layout_marginEnd="20dp"
+                 android:layout_height="wrap_content"/>
+
+         </RelativeLayout>
+
+        </TableLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

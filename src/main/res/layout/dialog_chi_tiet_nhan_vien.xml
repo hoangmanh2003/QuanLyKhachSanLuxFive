@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/dialog_add_nhan_vien_img"
+        android:src="@drawable/img_back_dialog_update_nhanvien"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="200dp"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutAvata"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/dialog_chitiet_nhan_vien_avata"
+            android:layout_width="120dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_height="100dp"
+            android:src="@drawable/user"
+            tools:layout_editor_absoluteX="140dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dialog_add_nhan_vien_textInput_manv"
+        android:layout_below="@id/layoutAvata"
+        android:layout_margin="10dp"
+        app:startIconDrawable="@drawable/baseline_person_outline_24"
+        app:errorTextAppearance="@style/ErrorTextAppearance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dialog_chitiet_nhan_vien_Edt_manv"
+            android:hint="Mã Nhân viên"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dialog_add_nhan_vien_textInput_tenNv"
+        android:layout_below="@id/dialog_add_nhan_vien_textInput_manv"
+        android:layout_margin="10dp"
+        app:startIconDrawable="@drawable/baseline_person_outline_24"
+        app:errorTextAppearance="@style/ErrorTextAppearance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dialog_chitiet_nhan_vien_Edt_tenNv"
+            android:hint="Tên Nhân viên"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dialog_add_nhan_vien_textInput_sdt"
+        android:layout_below="@id/dialog_add_nhan_vien_textInput_tenNv"
+        android:layout_margin="15sp"
+        app:startIconDrawable="@drawable/baseline_local_phone"
+        app:errorTextAppearance="@style/ErrorTextAppearance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dialog_chitiet_nhan_vien_Edt_sdt"
+            android:hint="Sđt Nhân viên"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dialog_add_nhan_vien_textInput_matkhau"
+        android:layout_below="@id/dialog_add_nhan_vien_textInput_sdt"
+        android:layout_margin="10dp"
+        app:startIconDrawable="@drawable/baseline_password"
+        app:errorTextAppearance="@style/ErrorTextAppearance"
+        android:layout_width="match_parent"
+        app:endIconMode="password_toggle"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dialog_chitiet_nhan_vien_Edt_matkhau"
+            android:inputType="textPassword"
+            android:hint=" Mật khẩu cũ"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@id/dialog_add_nhan_vien_textInput_matkhau"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/dialog_chitiet_nhan_vien_btnHuy"
+            android:text="Thoát"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/teal_700"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

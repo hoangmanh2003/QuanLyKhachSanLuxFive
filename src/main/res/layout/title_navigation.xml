@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/hotel_back_ground"
+        android:layout_height="200dp">
+    </FrameLayout>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/title_navigation_img"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/user"/>
+        <TextView
+            android:id="@+id/title_navigation_text"
+            android:layout_marginTop="250dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:textSize="30dp"
+            android:text="Welome to LUX FIVE Hotel"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+</RelativeLayout>

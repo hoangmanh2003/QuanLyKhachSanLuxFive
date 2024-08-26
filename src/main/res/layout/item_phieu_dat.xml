@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/cardview_shadow_start_color">
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:src="@drawable/lich"
+            android:layout_width="50dp"
+            android:padding="10dp"
+            android:layout_height="50dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/item_phieu_dat_tenNguoiDat"
+                android:text="1"
+                android:textSize="20dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/item_phieu_dat_phongDat"
+                android:text="1"
+                android:textSize="20dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/item_phieu_dat_ngayDat"
+                android:text="1"
+                android:textSize="20dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/item_phieu_dat_gioDat"
+                android:text="1"
+                android:textSize="20dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/item_phieu_dat_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lên đơn"
+                android:layout_marginEnd="15dp"
+                android:textSize="9dp"
+                tools:ignore="TextSizeCheck" />
+            <Button
+                android:id="@+id/item_phieu_dat_btn_huy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hủy đơn"
+                android:layout_marginEnd="15dp"
+                android:textSize="9dp"
+                tools:ignore="TextSizeCheck" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
